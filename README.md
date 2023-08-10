@@ -46,3 +46,13 @@
   - `Job` 은 `FlowStep1` 과 `FlowStep2` 를 순차 실행
   - `FlowStep2` 는 `Step2` 와 `Step3` 을 동시에 실행
   - 설정에 따라 `FlowStep1` 과 `FlowStep2` 를 동시 실행도 가능
+
+<hr>
+
+## Spring Batch 설정과 실행
+
+### jar 파일 생성과 실행
+- 프로젝트 경로로 이동
+  - `./gradlew clean jar build -x test`
+- 프로젝트 경로 -> /build/libs
+  - `java -jar spring-batch-example-0.0.1-SNAPSHOT.jar  --job.name=userJob -date=2020-11 -path=/Users/primarch/workspace/spring-batch/spring-batch-example/`
